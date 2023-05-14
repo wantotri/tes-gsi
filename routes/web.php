@@ -14,10 +14,7 @@ use App\Http\Controllers\LoginController;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
-
+Route::get('/', [LoginController::class, 'dashboard'])->name('dashboard')->middleware('auth');
 Route::get('dashboard', [LoginController::class, 'dashboard'])->name('dashboard')->middleware('auth');
 Route::get('input-transaksi', [LoginController::class, 'inputTransaksi'])->name('input-transaksi')->middleware('auth');
 Route::post('input-transaksi', [LoginController::class, 'createTransaksi'])->name('create-transaksi')->middleware('auth');

@@ -48,18 +48,6 @@
                     </tr>
                 </thead>
                 <tbody id="search-table-body">
-                    {{-- @foreach ($daftar_transaksi as $transaksi)
-                        <tr>
-                            <td>{{$loop->iteration}}</td>
-                            <td>{{$transaksi->tanggal_transaksi}}</td>
-                            <td>{{$transaksi->kode}}</td>
-                            <td>{{$transaksi->item->nama_item}}</td>
-                            <td>{{$transaksi->lokasi}}</td>
-                            <td>{{$transaksi->master_lokasi->nama_lokasi}}</td>
-                            <td>{{$transaksi->qty_actual}}</td>
-                            <td>{{$transaksi->npk}}</td>
-                        </tr>
-                    @endforeach --}}
                 </tbody>
             </table>
         </div>

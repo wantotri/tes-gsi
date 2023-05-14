@@ -7,7 +7,9 @@ document.addEventListener('DOMContentLoaded', () => {
   if (menuBtn) {
     menuBtn.addEventListener('click', (e) => {
       const sidebar = document.getElementsByClassName('sidebar')[0];
-      sidebar.classList.toggle('d-none');
+      if (sidebar) {
+        sidebar.classList.toggle('d-none');
+      }
     })
   }
 
